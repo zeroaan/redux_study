@@ -6,6 +6,7 @@ const DisplayNumber = (props) => {
       <div className="box">
         <h3>DisplayNumber</h3>
         <input type="number" value={props.displayNumber} readOnly />
+        {props.unit}
       </div>
     </>
   );

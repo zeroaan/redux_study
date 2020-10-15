@@ -2,7 +2,7 @@ import React from "react";
 
 const AddNumber = (props) => {
   const onClick = () => {
-    props.onClick();
+    props.onClick(props.number);
   };
   const onChange = (e) => {
     props.onChange(e);

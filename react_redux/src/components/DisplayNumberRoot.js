@@ -6,7 +6,7 @@ const DisplayNumberRoot = () => {
     <>
       <div className="box">
         <h3>DisplayNumberRoot</h3>
-        <DisplayNumber />
+        <DisplayNumber unit="kg" />
       </div>
     </>
   );

@@ -1,3 +1,27 @@
+import { connect } from "react-redux";
+import AddNumber from "../components/AddNumber";
+import { plusNumber, whatNumber } from "../_actions/number_action";
+
+const mapStateToProps = (state) => {
+  return {
+    number: state.number.number,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onClick: (number) => {
+      dispatch(plusNumber(number));
+    },
+    onChange: (e) => {
+      const { value } = e.target;
+      dispatch(whatNumber(value));
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AddNumber);
+
+/*
 import React from "react";
 import { useDispatch } from "react-redux";
 import { plusNumber, whatNumber } from "../_actions/number_action";
@@ -22,3 +46,4 @@ export default () => {
     </>
   );
 };
+*/
