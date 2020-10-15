@@ -1,18 +1,11 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { plusNumber, whatNumber } from "../_actions/number_action";
-import { store } from "../_store/index";
 
-const AddNumber = () => {
-  const dispatch = useDispatch();
-  const { number } = store.getState().number;
-
+const AddNumber = (props) => {
   const onClick = () => {
-    dispatch(plusNumber(number));
+    props.onClick();
   };
   const onChange = (e) => {
-    const { value } = e.target;
-    dispatch(whatNumber(value));
+    props.onChange(e);
   };
 
   return (
@@ -20,7 +13,7 @@ const AddNumber = () => {
       <div className="box">
         <h3>AddNumber</h3>
         <input type="button" value="+" onClick={onClick} />
-        <input type="number" value={number} onChange={onChange} />
+        <input type="number" value={props.number} onChange={onChange} />
       </div>
     </>
   );

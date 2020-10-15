@@ -1,14 +1,11 @@
 import React from "react";
-import { store } from "../_store/index";
 
-const DisplayNumber = () => {
-  const { displayNumber } = store.getState().number;
-
+const DisplayNumber = (props) => {
   return (
     <>
       <div className="box">
         <h3>DisplayNumber</h3>
-        <input type="number" value={displayNumber} readOnly />
+        <input type="number" value={props.displayNumber} readOnly />
       </div>
     </>
   );
