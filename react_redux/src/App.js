@@ -6,7 +6,7 @@ import DisplayNumberRoot from "./components/DisplayNumberRoot";
 const App = () => {
   return (
     <>
-      <div class="box">
+      <div className="box">
         <h3>Root</h3>
         <AddNumberRoot />
         <DisplayNumberRoot />

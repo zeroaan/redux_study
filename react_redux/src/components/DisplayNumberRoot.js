@@ -4,7 +4,7 @@ import DisplayNumber from "./DisplayNumber";
 const DisplayNumberRoot = () => {
   return (
     <>
-      <div class="box">
+      <div className="box">
         <h3>DisplayNumberRoot</h3>
         <DisplayNumber />
       </div>

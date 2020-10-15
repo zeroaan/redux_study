@@ -4,7 +4,7 @@ import AddNumber from "./AddNumber";
 const AddNumberRoot = () => {
   return (
     <>
-      <div class="box">
+      <div className="box">
         <h3>AddNumberRoot</h3>
         <AddNumber />
       </div>
