@@ -1,5 +1,5 @@
 import React from "react";
-import { store } from "../index";
+import { store } from "../_store/index";
 
 const DisplayNumber = () => {
   const { displayNumber } = store.getState().number;

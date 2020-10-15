@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { plusNumber, whatNumber } from "../_actions/number_action";
-import { store } from "../index";
+import { store } from "../_store/index";
 
 const AddNumber = () => {
   const dispatch = useDispatch();
